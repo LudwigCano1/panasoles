@@ -139,8 +139,8 @@ with st.sidebar:
 
 for p in filtro:
     df_filtrado = df_nuevo[df_nuevo["pier"] == p]
-    ax[0].plot(df_filtrado["M3"], df_filtrado["P"], marker="o", lw=0, ms=3, label=p)
-    ax[1].plot(df_filtrado["M2"], df_filtrado["P"], marker="o", lw=0, ms=3, label=p)
+    ax[0].plot(df_filtrado["M3"], df_filtrado["P"], marker="o", lw=0, ms=4, label=p)
+    ax[1].plot(df_filtrado["M2"], df_filtrado["P"], marker="o", lw=0, ms=4, label=p)
 
 for i in range(2):
     ax[i].legend()
