@@ -4,7 +4,13 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(layout="wide")
 
-df_l = pd.read_excel("CARGAS_GENERAL.xlsx")
+@st.cache_data
+def cargar_datos():
+    ddd = pd.read_excel("CARGAS_GENERAL.xlsx")
+    return ddd
+
+
+df_l = cargar_datos()
 secciones = ["P01", "P02"]
 
 
