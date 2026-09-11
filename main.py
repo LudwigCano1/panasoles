@@ -90,7 +90,7 @@ for story in stories:
             d_nuevo["M3"].append(0.9*M3["D"] - M3["SY"])
 
 df_nuevo = pd.DataFrame(d_nuevo)
-fig, ax = plt.subplots(1,2, figsize=(16,8), dpi=200)
+fig, ax = plt.subplots(1,2, figsize=(20,10), dpi=200)
 
 asdasd = 1
 
