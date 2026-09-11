@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 df_l = pd.read_excel("CARGAS_GENERAL.xlsx")
-secciones = ["P01", "P02"]
+secciones = ["P01", "P02", "J03-S2"]
 
 
 stories = df_l["Story"].unique()
