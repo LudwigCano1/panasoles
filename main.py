@@ -92,8 +92,6 @@ for story in stories:
 df_nuevo = pd.DataFrame(d_nuevo)
 fig, ax = plt.subplots(1,2, figsize=(20,10), dpi=200)
 
-asdasd = 1
-
 for seccion in secciones:
 
     df = pd.read_excel("DIAGRAMAS_PANASOLES.xlsx", sheet_name=seccion, skiprows=1)
@@ -134,7 +132,6 @@ for i in range(2):
 
 with st.sidebar:
     filtro = st.pills("PIERS", options=df_nuevo["pier"].unique(), selection_mode="multi")
-    filtro
     "Elaborado por Ludwig Cano"
 
 #df_filtrado = df_nuevo[df_nuevo["pier"].isin(filtro)]
