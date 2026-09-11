@@ -2,8 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-"Elaborado por Ludwig Cano"
-
 st.set_page_config(layout="wide")
 
 df_l = pd.read_excel("CARGAS_GENERAL.xlsx")
@@ -137,6 +135,7 @@ for i in range(2):
 with st.sidebar:
     filtro = st.pills("PIERS", options=df_nuevo["pier"].unique(), selection_mode="multi")
     filtro
+    "Elaborado por Ludwig Cano"
 
 #df_filtrado = df_nuevo[df_nuevo["pier"].isin(filtro)]
 
