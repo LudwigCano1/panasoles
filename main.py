@@ -110,8 +110,8 @@ for seccion in secciones:
     diag_90 = pd.concat([c,d], ignore_index=True)
 
     if seccion in ["P01", "P02", "P03"]:
-        ax[0].plot(diag_0["M3"], diag_0["P"], "--", color="r" if seccion == "P01" else "m", label=seccion, lw=2)
-        ax[1].plot(diag_90["M2"], diag_90["P"], "--", color="r" if seccion == "P01" else "m", label=seccion, lw=2)
+        ax[0].plot(diag_0["M3"], diag_0["P"], "--", color="r" if seccion == "P01" else "gray", label=seccion, lw=2)
+        ax[1].plot(diag_90["M2"], diag_90["P"], "--", color="r" if seccion == "P01" else "gray", label=seccion, lw=2)
     else:
         ax[0].plot(diag_0["M3"], diag_0["P"], "--", label=seccion)
         ax[1].plot(diag_90["M2"], diag_90["P"], "--", label=seccion)
