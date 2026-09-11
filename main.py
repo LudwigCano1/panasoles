@@ -93,9 +93,9 @@ df_nuevo = pd.DataFrame(d_nuevo)
 
 fig, ax = plt.subplots(1,2, figsize=(16,8), dpi=200)
 
-for seccion in secciones:
+df = pd.read_excel("DIAGRAMAS_PANASOLES.xlsx", sheet_name=seccion, skiprows=1)
 
-    df = pd.read_excel("DIAGRAMAS_PANASOLES.xlsx", sheet_name=seccion, skiprows=1)
+for seccion in secciones:
 
     a = df.iloc[:,1:3]
     a.columns = ["P", "M3"]
