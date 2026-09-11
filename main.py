@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(layout="wide")
 
 df_l = pd.read_excel("CARGAS_GENERAL.xlsx")
-secciones = ["P01", "P02", "J03-S2"]
+secciones = ["P01", "P02", "COSAPI"]
 
 
 stories = df_l["Story"].unique()
@@ -110,7 +110,7 @@ for seccion in secciones:
     d.columns = ["P", "M2"]
     diag_90 = pd.concat([c,d], ignore_index=True)
 
-    if seccion in ["P01", "P02", "P03"]:
+    if seccion in ["P01", "COSAPI", "P03"]:
         ax[0].plot(diag_0["M3"], diag_0["P"], "--", color="r" if seccion == "P01" else "gray", label=seccion, lw=2)
         ax[1].plot(diag_90["M2"], diag_90["P"], "--", color="r" if seccion == "P01" else "gray", label=seccion, lw=2)
     else:
