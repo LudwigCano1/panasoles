@@ -90,12 +90,13 @@ for story in stories:
             d_nuevo["M3"].append(0.9*M3["D"] - M3["SY"])
 
 df_nuevo = pd.DataFrame(d_nuevo)
-
 fig, ax = plt.subplots(1,2, figsize=(16,8), dpi=200)
 
-df = pd.read_excel("DIAGRAMAS_PANASOLES.xlsx", sheet_name=seccion, skiprows=1)
+asdasd = 1
 
 for seccion in secciones:
+
+    df = pd.read_excel("DIAGRAMAS_PANASOLES.xlsx", sheet_name=seccion, skiprows=1)
 
     a = df.iloc[:,1:3]
     a.columns = ["P", "M3"]
