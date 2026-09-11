@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+"Elaborado por Ludwig Cano"
+
 st.set_page_config(layout="wide")
 
 df_l = pd.read_excel("CARGAS_GENERAL.xlsx")
